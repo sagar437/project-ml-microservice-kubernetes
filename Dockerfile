@@ -12,7 +12,7 @@ COPY . app.py /opt/project/
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
 COPY requirements.txt /opt/project
-RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pip==19.3.1
 RUN pip3 install -r /opt/project/requirements.txt
 
 
